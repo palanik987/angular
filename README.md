@@ -1,7 +1,7 @@
 # Angular Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
-Check https://firstpage.stackblitz.io for demo
+Check https://angular-cli.stackblitz.io for demo
 
 ## Development server
 
