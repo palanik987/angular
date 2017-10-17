@@ -1,0 +1,22 @@
+<div *ngFor = "let article of article_instance" class="block">
+  <div >
+    <a [routerLink]="['/bbc-news',article.description]" class="header">{{article.title}}</a>
+  </div>
+  <div class="details">
+    <span class="author">&#9873;&emsp;{{article.author}}</span> &emsp;&emsp;&emsp;&emsp;
+    <span class="date">&#9741;&emsp;{{article.publishedAt | date}}</span>
+  </div>
+  <!--<br>
+  <div>
+    <img [src]="article.urlToImage">
+  </div>-->
+  <!--<br>
+  <div class="description">
+    <div class="contents">{{article.description}}</div>
+  </div>-->
+  <br>
+  <div class="link">
+    <a [routerLink]="['/bbc-news', article.description]" class="view_more">View More</a>
+  </div>
+</div>
+

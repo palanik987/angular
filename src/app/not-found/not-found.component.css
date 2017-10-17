@@ -1,0 +1,19 @@
+div{
+  margin: 0px auto;
+  width: 75%;
+}
+p{
+  font-size: 20px;
+}
+.link{
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: green;
+}
+.link:hover{
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: blue;
+}

@@ -1,0 +1,9 @@
+<div class="navbar">
+  <a routerLink='' class="nav_item" routerLinkActive="active">Home</a>
+  <a routerLink='bbc-news' class="nav_item" routerLinkActive = "active">BBC</a>
+  <a routerLink='form' class="nav_item" routerLinkActive = "active">Form</a>  
+  <a routerLink='carousel' class="nav_item" routerLinkActive = "active">Carousel</a>    
+</div>
+<div [@effect] = "getState(state)">
+  <router-outlet #state = "outlet"></router-outlet>
+</div>

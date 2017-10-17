@@ -1,0 +1,33 @@
+.links{
+  padding: 50px;
+  background-color: #d2f2d4;
+  width: 75%;
+  margin: 0px auto;
+}
+.nav_links{
+  text-decoration: none;
+  font-size: 30px;
+  padding: 15px;
+  background-color: #278434;
+  color :white;
+  border-left: 5px solid #278434;
+  display: inline-block;
+  margin:5px;
+}
+.nav_links:hover{
+  text-decoration: none;
+  font-size: 30px;
+  padding: 15px;
+  background-color: #d2f2d4;
+  color :#278434;
+  border: none;
+  border-left: 5px solid #278434;
+}
+.header{
+  font-size: 30px;
+  width: 50%;
+  padding: 20px;
+  margin: 0px auto;
+  text-align: center;
+  color: #871205;
+}

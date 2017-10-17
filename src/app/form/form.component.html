@@ -1,0 +1,53 @@
+<br>
+<br>
+<div class="loginForm">
+  <h1>Login Form</h1>
+  <form (ngSubmit) = "addUser(name,password)">
+    <div>username&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" [(ngModel)] = "name" name="name" class="username" maxlength="10">
+    </div>
+    <br>
+    <div>password&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="password" [(ngModel)] = "password" name="password" class="password" required>
+    </div>
+    <br>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" class="submit">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="reset" class="submit" (click)="reset()">
+    </div>
+  </form>
+</div>
+
+<div *ngIf="flag == 0" class = "output">
+  Please fill out all the information
+</div>
+<div *ngIf="flag == 2" class="output">
+  Reset Done!
+</div>
+<div *ngIf="flag == 1" class="output">
+  <p >Your Form is submitted with </p>
+  <div class="details">
+    <p>username : {{userName}}</p>
+    <p> password : {{userCredential}}</p>
+  </div>
+</div>
+
+
+
+
+<!--<form class="form-layout" (ngSubmit) = "onSubmit()">
+  <table>
+    <tr>
+      <td>Username</td>
+      <td><input type="text" [(ngModel)] = "username" name="username"></td>      
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="password" [(ngModel)] = "password" name="password"></td>      
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit"></td>      
+    </tr>
+  </table>
+</form>-->
