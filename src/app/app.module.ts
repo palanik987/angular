@@ -12,9 +12,11 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselComponent} from './carousal/carousal.component';
+import { SpotifyComponent } from './spotify/spotify.component';
 // import { OwlModule } from 'angular-owl-carousel';
 // import { CarouselModule } from 'angular4-carousel';
 // import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { SongKickComponent } from './songkick/songkick.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -25,7 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NewsDetailComponent,
     NotFoundComponent,
     FormComponent,
-    CarouselComponent
+    CarouselComponent,
+    SpotifyComponent,
+    SongKickComponent
   ],
   imports: [
     BrowserModule,
@@ -34,10 +38,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      
       {
-        path:'',
+        path:'home',
         component: HomeComponent
-      },
+      }, 
       {
         path:'form',
         component: FormComponent
@@ -55,8 +60,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         component : CarouselComponent
       },
       {
+        path:'spotify',
+        component : SpotifyComponent
+      },
+      {
+        path:'songkick',
+        component : SongKickComponent
+      },
+      {
+        path:'',
+        // component: HomeComponent
+        redirectTo:'/form',
+        pathMatch:'full'
+      },
+      {
         path:'**',
-        component: NotFoundComponent
+        //component: NotFoundComponent
+        redirectTo:'/carousel',
+        pathMatch:'full'
       }
     ])
   ],

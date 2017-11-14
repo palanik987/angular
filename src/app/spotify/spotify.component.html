@@ -1,0 +1,7 @@
+<div>
+  <button (click)="getTracks()">Click Me</button>
+  <div *ngFor = 'let track of tracks'>Song name --
+    <a [href]='track.href'>{{track.name}}</a>
+    <p>Album name -- {{track.album.name}} -- Track number {{track.track_number}}</p>
+  </div>
+</div>

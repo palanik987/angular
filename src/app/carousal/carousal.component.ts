@@ -1,5 +1,6 @@
 import { Component,Input } from '@angular/core';
 // import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
+	import { DecimalPipe } from '@angular/common';
 
 @Component({
   templateUrl:'./carousal.component.html',
@@ -22,4 +23,7 @@ export class CarouselComponent{
   //   autoplayDelay: 2000,
   //   stopAutoplayMinWidth: 768
   // };
+  go(n){
+    return (n/2)%2;
+  }
 }
