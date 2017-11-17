@@ -1,6 +1,6 @@
 {
   "name": "angular-template",
-  "description": "",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.",
   "homepage": "https://stackblitz.com/edit/ng4",
   "dependencies": {
     "@angular/animations": "4.4.5",
@@ -12,14 +12,15 @@
     "@angular/platform-browser": "4.3.3",
     "@angular/platform-browser-dynamic": "4.3.3",
     "@angular/router": "4.3.3",
+    "angular-owl-carousel": "1.0.0",
+    "angular4-carousel": "3.1.5",
     "core-js": "2.4.1",
-    "rxjs": "5.4.2",
-    "zone.js": "0.8.12",
-    "script-loader": "0.7.0",
     "ng2-carouselamos": "2.4.4",
     "ngx-owl-carousel": "1.0.1",
-    "angular4-carousel": "3.1.5",
-    "angular-owl-carousel": "1.0.0"
+    "prerender-node": "^2.7.4",
+    "rxjs": "5.4.2",
+    "script-loader": "0.7.0",
+    "zone.js": "0.8.12"
   },
   "version": "0.0.0",
   "license": "MIT",
@@ -51,6 +52,17 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
-    "typescript": "~2.3.3"
+    "typescript": "~2.3.3",
+    "webpack": "^3.8.1",
+    "webpack-init": "^0.1.2"
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palanik987/angular.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/palanik987/angular/issues"
   }
 }
