@@ -18,6 +18,7 @@ import { SpotifyComponent } from './spotify/spotify.component';
 // import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { SongKickComponent } from './songkick/songkick.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UniversalModule } from 'angular2-universal/browser';
 
 @NgModule({
   declarations: [
@@ -36,13 +37,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpModule,
     FormsModule,
     BrowserAnimationsModule,
+    // UniversalModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      
+
       {
         path:'home',
         component: HomeComponent
-      }, 
+      },
       {
         path:'form',
         component: FormComponent
